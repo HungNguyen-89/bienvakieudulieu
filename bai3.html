@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let so_tien_vay;
+        let lai_suat;
+        let so_nam;
+        so_tien_vay = +prompt("Nhập số tiền cần vay (đơn vị triệu VND)");
+        lai_suat = +prompt("Nhập lãi suất cho vay của ngân hàng (đơn vị %):");
+        so_nam = +prompt("Nhập số năm vay vốn (đơn vị năm)");
+        let lai_hang_nam = so_tien_vay * lai_suat / 100;
+        let tong_lai = so_nam * lai_hang_nam;
+        let tong_so_tien;
+        tong_so_tien = so_tien_vay + tong_lai;
+        document.write('Số tiền cần trả trong ' + so_nam + ' năm là: ' + tong_so_tien + 'triệu VNĐ')
+    </script>
+
+</body>
+
+</html>
